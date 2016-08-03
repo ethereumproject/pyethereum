@@ -25,3 +25,6 @@ pyethereum/todo.txt
 pyethereum/monkeypatch.py
 .eggs
 .cache
+.idea
+*.iml
+*.project
