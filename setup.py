@@ -7,7 +7,7 @@ with open('README.rst') as readme_file:
 # requirements
 install_requires = set(x.strip() for x in open('requirements.txt'))
 install_requires_replacements = {
-    'https://github.com/ethereum/ethash/tarball/master': 'pyethash',
+    'https://github.com/ethereumproject/ethash/tarball/master': 'pyethash',
 }
 install_requires = [install_requires_replacements.get(r, r) for r in install_requires]
 
@@ -15,12 +15,12 @@ install_requires = [install_requires_replacements.get(r, r) for r in install_req
 tests_require = set(x.strip() for x in open('dev_requirements.txt'))
 tests_require_replacements = dict()
 tests_require_replacements = {
-    'https://github.com/ethereum/serpent/tarball/develop': 'ethereum-serpent>=2.0.2'
+    'https://github.com/ethereumproject/serpent/tarball/develop': 'ethereum-serpent>=2.0.2'
 }
 tests_require = [tests_require_replacements.get(r, r) for r in tests_require]
 
 # *IMPORTANT*: Don't manually change the version here. Use the 'bumpversion' utility.
-# see: https://github.com/ethereum/pyethapp/wiki/Development:-Versions-and-Releases
+# see: https://github.com/ethereumproject/pyethapp/wiki/Development:-Versions-and-Releases
 version = '1.5.2'
 
 setup(
@@ -28,7 +28,7 @@ setup(
     packages=find_packages("."),
     description='Next generation cryptocurrency network',
     long_description=readme,
-    url='https://github.com/ethereum/pyethereum/',
+    url='https://github.com/ethereumproject/pyethereum/',
     install_requires=install_requires,
     tests_require=tests_require,
     setup_requires=[
