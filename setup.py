@@ -26,7 +26,7 @@ version = '1.5.2'
 setup(
     name="cethereum",
     packages=find_packages("."),
-    description='Next generation cryptocurrency network',
+    description='Classic version of the next generation cryptocurrency network',
     long_description=readme,
     url='https://github.com/ethereumproject/pyethereum/',
     install_requires=install_requires,
