@@ -5,6 +5,9 @@ Ethereum Classic -- Next generation cryptocurrency network
 Ethereum Core Library
 =====================
 
+**WARNING**
+This library is not compatible with the current ETC blockchain!  It does not have ECIP-1010. You have been warned!
+
 This is the Python core library of the Ethereum Classic project.
 
 For the python based command line client see:
